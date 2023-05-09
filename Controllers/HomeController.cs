@@ -15,12 +15,30 @@ public class HomeController : Controller
 
     public IActionResult Index()
     {
+        ViewBag.EquiposIndumentaria();
         return View();
     }
-
-    public IActionResult Privacy()
+    public IActionResult SelectIndumentaria()
     {
-        return View();
+        ViewBag.ListaEquipos();
+        ViewBag.ListaCamisetas();
+        ViewBag.ListaPantalones();
+        ViewBag.ListaMedias();
+        return SelectIndumentaria();
+    }
+    public IActionResult GuardarIndumentaria(int Equipo, int Pantalon, int Media, int Remera)
+    {
+        bool validar = false;
+        if(Equipo == null || Pantalon == null || Media == null || Remera == null)
+        {
+            validar = true;
+            return SelectIndumentaria();
+        }
+        else
+        {
+            validar = false;
+            return View();
+        }
     }
 
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
