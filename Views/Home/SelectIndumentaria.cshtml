@@ -1,0 +1,55 @@
+﻿@{
+    
+}
+<h1>@ViewData["Select Indumentaria"]</h1>
+
+<p>Seleccione su indumentaria</p>
+<form action='@Url.Action("GuardarIndumentaria")'>
+    <h3>Seleccione su equipo:</h3>
+<div id="Formulario">
+    @{
+        int i=1;
+        foreach (var item in ViewBag.Listaequipos)
+        {
+            <b>@i. @item</b>
+            i++;
+        }
+    }
+    <input type="number" max="10" min="1" step="1">
+</div>
+<div id="Formulario">
+    @{
+        int k=1;
+        foreach (var item in ViewBag.ListaRemeras)
+        {
+            <b>@k. <img src="/img/Camisetas/@item" alt="wwwroot"></b>
+            k++;
+        }
+    }
+    <input type="number" max="10" min="1" step="1">
+</div>
+<div id="Formulario">
+    @{
+        int p=1;
+        foreach (var item in ViewBag.ListaShorts)
+        {
+            <b>@p. <img src="/img/Shorts/@item" alt="wwwroot"></b>
+            p++;
+        }
+    }
+    <input type="number" max="10" min="1" step="1">
+</div>
+<div id="Formulario">
+    @{
+        int a=1;
+        foreach (var item in ViewBag.ListaMedias)
+        {
+            <b>@a. <img src="/img/Medias/@item" alt="wwwroot"></b>
+            a++;
+        }
+    }
+    <input type="number" max="10" min="1" step="1">
+</div>
+<input type="submit" value="Submit Formulario">
+<input type="reset" value="Reset Formulario">
+</form>
