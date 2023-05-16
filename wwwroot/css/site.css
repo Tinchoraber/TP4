@@ -19,6 +19,7 @@ html {
 
 body {
   margin-bottom: 60px;
+  background-color: rgb(234, 247, 121);
 }
 #Formulario{
   float: left;
@@ -27,4 +28,10 @@ body {
 div img{
   width: 7.5%;
   height: auto;
+}
+h3{
+  color: rgb(127, 193, 255);
+}
+#Muestra{
+  color: rgb(197, 130, 177);
 }

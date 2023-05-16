@@ -5,14 +5,11 @@
 <div class="text-center">
     <h1 class="display-4">Bienvenido</h1>
     <p><a href='@Url.Action("SelectIndumentaria")'>Seleccionar Indumentaria</a></p>
-    @if(ViewBag.EquipoIndumentaria != null){
-    @foreach (var item in ViewBag.EquipoIndumentaria.Keys)
+</div>
+<div id = "Muestra">
+@foreach (var item in ViewBag.EquipoIndumentaria.Keys)
     {
         <p>El nombre del Equipo es: @item</p>
         <p>Los datos faltantes de la Indumentaria son: @ViewBag.EquipoIndumentaria.Values</p>
-    }
-    }
-    else{
-        <p>@ViewBag.Error</p>
     }
 </div>

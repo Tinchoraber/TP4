@@ -1,11 +1,10 @@
 ﻿@{
-    
+
 }
 <h1>@ViewData["Select Indumentaria"]</h1>
-
 <p>Seleccione su indumentaria</p>
 <form action='@Url.Action("GuardarIndumentaria")'>
-    <h3>Seleccione su equipo:</h3>
+    <h3>Seleccione su equipo:</h3><br>
 <div id="Formulario">
     @{
         int i=1;
@@ -15,7 +14,7 @@
             i++;
         }
     }
-    <input type="number" max="10" min="1" step="1">
+    <input type="number" max="10" min="1" step="1" name="Equipo">
 </div>
 <div id="Formulario">
     @{
@@ -26,7 +25,7 @@
             k++;
         }
     }
-    <input type="number" max="10" min="1" step="1">
+    <input type="number" max="10" min="1" step="1" name="Remera">
 </div>
 <div id="Formulario">
     @{
@@ -37,7 +36,7 @@
             p++;
         }
     }
-    <input type="number" max="10" min="1" step="1">
+    <input type="number" max="10" min="1" step="1" name="Pantalon">
 </div>
 <div id="Formulario">
     @{
@@ -48,8 +47,9 @@
             a++;
         }
     }
-    <input type="number" max="10" min="1" step="1">
+    <input type="number" max="10" min="1" step="1" name="Media">
 </div>
-<input type="submit" value="Submit Formulario">
+<input type="submit" value="Submit Formulario"><br>
 <input type="reset" value="Reset Formulario">
 </form>
+ <p>@ViewBag.Error</p>
