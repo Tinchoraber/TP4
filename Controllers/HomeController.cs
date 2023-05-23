@@ -28,10 +28,8 @@ public class HomeController : Controller
     }
     public IActionResult GuardarIndumentaria(int Equipo, int Pantalon, int Media, int Remera)
     {
-        bool validar = false;
         if(Equipo == 0 || Pantalon == 0 || Media == 0 || Remera == 0)
         {
-            validar = true;
             ViewBag.Error = "Error, no ingresaste datos";
             ViewBag.Listaequipos = Equipos.ListaEquipos;
             ViewBag.ListaRemeras = Equipos.ListaCamisetas;
@@ -41,9 +39,8 @@ public class HomeController : Controller
         }
         else
         {
-            validar = false;
-            Indumentaria objeto = new Indumentaria(Equipos.ListaPantalones[Pantalon], Equipos.ListaMedias[Media], Equipos.ListaCamisetas[Remera]);
-            Equipos.ingresarIndumentaria(Equipos.ListaEquipos[Equipo], objeto);
+            Indumentaria objeto = new Indumentaria(Equipos.ListaPantalones[Pantalon -1], Equipos.ListaMedias[Media -1], Equipos.ListaCamisetas[Remera -1]);
+            Equipos.ingresarIndumentaria(Equipos.ListaEquipos[Equipo -1], objeto);
             ViewBag.EquipoIndumentaria = Equipos.EquiposIndumentaria;
             return View("Index");
         }

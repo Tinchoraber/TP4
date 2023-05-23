@@ -7,9 +7,11 @@
     <p><a href='@Url.Action("SelectIndumentaria")'>Seleccionar Indumentaria</a></p>
 </div>
 <div id = "Muestra">
-@foreach (var item in ViewBag.EquipoIndumentaria.Keys)
+@foreach (var item in ViewBag.EquipoIndumentaria)
     {
-        <p>El nombre del Equipo es: @item</p>
-        <p>Los datos faltantes de la Indumentaria son: @ViewBag.EquipoIndumentaria.Values</p>
+        <p>El nombre del Equipo es: @item.Key</p> 
+        <img src="/img/Medias/@item.Value.Medias" alt="">
+        <img src="/img/Camisetas/@item.Value.Camiseta" alt="">
+        <img src="/img/Shorts/@item.Value.Pantalon" alt="">
     }
 </div>

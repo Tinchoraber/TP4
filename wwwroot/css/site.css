@@ -23,7 +23,9 @@ body {
 }
 #Formulario{
   float: left;
-  border: 5px solid black;
+  border: solid rgb(218, 72, 28);
+  border-radius: 5px;
+  margin-top: 2%;
 }
 div img{
   width: 7.5%;

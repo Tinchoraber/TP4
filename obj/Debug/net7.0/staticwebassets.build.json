@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "vj0ELAgOKgDOndPZ/nOPYqG9rOXZdsIYgKIKppdZ4Ds=",
+  "Hash": "416G4W+SuIZRCVlkz9qRvFNcCXRwp9rtee5fGxyRZOw=",
   "Source": "TP4",
   "BasePath": "_content/TP4",
   "Mode": "Default",
@@ -578,12 +578,12 @@
       "OriginalItemSpec": "wwwroot\\img\\Shorts\\shortRosario.jpg"
     },
     {
-      "Identity": "Z:\\2023\\Programacion\\TP4\\wwwroot\\img\\Shorts\\shortSanlorenzo.jpg",
+      "Identity": "Z:\\2023\\Programacion\\TP4\\wwwroot\\img\\Shorts\\shortSanLorenzo.jpg",
       "SourceId": "TP4",
       "SourceType": "Discovered",
       "ContentRoot": "Z:\\2023\\Programacion\\TP4\\wwwroot\\",
       "BasePath": "_content/TP4",
-      "RelativePath": "img/Shorts/shortSanlorenzo.jpg",
+      "RelativePath": "img/Shorts/shortSanLorenzo.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -592,7 +592,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\img\\Shorts\\shortSanlorenzo.jpg"
+      "OriginalItemSpec": "wwwroot\\img\\Shorts\\shortSanLorenzo.jpg"
     },
     {
       "Identity": "Z:\\2023\\Programacion\\TP4\\wwwroot\\img\\Shorts\\shortVelez.jpg",
